@@ -26,7 +26,7 @@ func (s *UserService) Create(user model.User) model.User {
 }
 
 func (s *UserService) Update (id int, update model.User) *model.User {
-	return s.repo.Update(id, update)
+	return s.repo.Updated(id, update)
 }
 
 func (s *UserService) Delete (id int) bool {

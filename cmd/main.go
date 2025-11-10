@@ -13,12 +13,12 @@ func main(){
 
 	r := gin.Default()
 
-		repo := repostory.NewUserRepostory()
+		repo := repostory.NewUserRepostroy()
 	svc := service.NewUserService(repo)
 	handler := handler.NewUserHandler(svc)
 
 	handler.RegisterRoutes(r)
 
-	r.Run(":8081")
+	r.Run(":8082")
 	
 }
